@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="{{ '/assets/css/theme-toggle.css' | relative_url }}">
+<script>
+  // Runs before paint — prevents flash of wrong theme
+  (function() {
+    var theme = localStorage.getItem('preferred-theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+
+<style>
+  .masthead {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #252a34;  /* dark skin masthead color */
+    border-bottom: 1px solid #1a1f27;  /* subtle separator */
+  }
+
+  .initial-content,
+  .search-content {
+    margin-top: 70px;
+  }
+
+  section h3 {
+    margin-top: 0.5rem;
+  }
+</style>

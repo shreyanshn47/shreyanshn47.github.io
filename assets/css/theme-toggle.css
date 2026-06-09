@@ -1,0 +1,70 @@
+/* ── Light skin overrides (applied when user picks light) ── */
+html[data-theme="light"] {
+  --mm-bg:         #fff;
+  --mm-text:       #494e52;
+  --mm-link:       #0092ca;
+  --mm-border:     #f2f3f3;
+  --mm-masthead:   #fff;
+  --mm-code-bg:    #fafafa;
+}
+
+html[data-theme="light"] body {
+  background-color: #fff;
+  color: #494e52;
+}
+
+html[data-theme="light"] .masthead,
+html[data-theme="light"] .page__footer {
+  background-color: #fff;
+  color: #494e52;
+  border-color: #f2f3f3;
+}
+
+html[data-theme="light"] a {
+  color: #0092ca;
+}
+
+html[data-theme="light"] .greedy-nav {
+  background: #fff;
+}
+
+html[data-theme="light"] .greedy-nav a {
+  color: #494e52;
+}
+
+html[data-theme="light"] .page__content,
+html[data-theme="light"] .sidebar,
+html[data-theme="light"] .author__name,
+html[data-theme="light"] .author__bio,
+html[data-theme="light"] .author__urls a {
+  color: #494e52;
+}
+
+/* ── Toggle button styling ── */
+#theme-toggle {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 3px 10px;
+  margin-left: 10px;
+  vertical-align: middle;
+  line-height: 1.4;
+  transition: border-color 0.2s, background 0.2s;
+  color: inherit;
+}
+
+#theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+html[data-theme="light"] #theme-toggle {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+html[data-theme="light"] #theme-toggle:hover {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.4);
+}
