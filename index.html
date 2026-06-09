@@ -2,6 +2,80 @@
 # You don't need to edit this file, it's empty on purpose.
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
+layout: single
 author_profile: true
+permalink: /
 ---
+
+<section id="about">
+    <h2>About Me</h2>
+
+    <p>
+        I'm a recent M.S. Cybersecurity graduate from Georgia Tech, 
+        focused on translating threat intelligence analysis into actionable detection and policy outcomes.
+    
+        My goal is to ensure that security systems can be deployed at scale 
+        while maintaining the protection properties essential for user trust, 
+        ultimately supporting practitioners and organizations in implementing effective security solutions.
+    </p>
+    
+    <p></p>
+        To request my latest CV/Résumé, feel free to <a href="mailto:shreyanshn47+resume@email.com">email</a> me.
+    </p>
+
+    <h3>Technical Skills</h3>
+    <ul>
+        <li>Programming Languages: C/C++, Python, R, x86 Assembly, MATLAB</li>
+        <li>Tools & Infrastructure: IDA, PinTools, Docker, PostgreSQL</li>
+        <li>AI & ML: Privacy-Preserving ML, Neural Network Architectures, Explainability Methods (SHAP)</li>
+        <li>Drones: Understanding of drones, flight controllers, and remote-controlled aircraft</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <h3>Anti-Phishing Policy Effectiveness Analysis</h3>
+    <ul>
+        <li>Constructed a novel phishing incident data from 10 independent sources (APWG, DBIR, IBM, Proofpoint, Kaspersky) into a structured 40-variable dataset, mapping regulatory timelines against sector-specific outcome metrics.</li>
+        <li>Analyzed policy-outcome correlations to identify attack displacement patterns and the effect on breach detection time.</li>
+    </ul>
+
+    <h3>Malware Reverse Engineering</h3>
+    <ul>
+        <li>Reverse-engineered GreenCat-2 PE binary in IDA, tracing control flow through C2 command dispatch, to understand how the RAT receives, parses, and executes operator commands.</li>
+        <li>Built IDA Pro plugins to automatically generate control flow graphs, def-use chains, and data dependence graphs.</li>
+        <li>Dynamically traced execution using PinTools while executing the malware via a simulated C2 server.</li>
+    </ul>
+    
+    <h3>National Privacy Laws vs Cyber Attacks</h3>
+    <ul>
+        <li>Built OLS and fixed-effects regression models across 163 countries over 10 years to test whether national privacy legislation reduces cyber-attack frequency.</li>
+        <li>Produced geospatial visuals (QGIS) and time-series analyses of cyber-attack trends for multiple legislatures.</li>
+    </ul>
+</section>
+
+<section id="pubs">
+    <h2>Publications</h2>
+
+    <h3><a href="https://ieeexplore.ieee.org/abstract/document/10837292">Enhancing Privacy using DNA based Data Hiding</a></h3>
+    <p>
+        <em>IEEE International Conference on Blockchain and Distributed Systems Security (ICBDS)</em><br>
+        2024
+    </p>
+
+    <h3><a href="https://ieeexplore.ieee.org/abstract/document/10141472">Securing Data in the Internet of Things (IoT) using Metamorphic Cryptography - A Survey</a></h3>
+    <p>
+        <em>International Conference on Computational Intelligence, Communication Technology and Networking (CICTN)</em><br>
+        2023
+    </p>
+</section>
+
+<section id="awards">
+    <h2>Awards</h2>
+
+    <ul>
+        <li>Institute Gold Medal, IIIT Agartala (2025)</li>
+        <li>DAAD WISE Scholarship, Deutscher Akademischer Austauschdienst (2023)</li>
+    </ul>
+</section>

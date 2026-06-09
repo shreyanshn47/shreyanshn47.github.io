@@ -13,18 +13,23 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
+local: "en-US"
+title: "Shreyansh M"
+# subtitle: "Cybersecurity Researcher"
+name: "Shreyansh M"
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
+  Cybersecurity graduate specializing in threat intelligence, 
+  malware analysis, and public policy.
+url: "https://shreyanshn47.github.io"
+baseurl: ""
+repository: "shreyanshn47/shreyanshn47.github.io"
+
+github_username: shreyanshn47
+minimal_mistakes_skin: dark   # default, air, aqua, contrast, dark, mint
 search: true
 
 # Build settings
+livereload: true
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
@@ -58,34 +63,32 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
+  name   : "Shreyansh M"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Cybersecurity researcher and collaborative problem solver"
+  location: "San Francisco, CA"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://shreyanshn47.github.io"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/shreyansh-narayan/"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:shreyanshn47@email.com"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://shreyanshn47.github.io"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/shreyansh-narayan/"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:shreyanshn47@email.com"
 
 defaults:
   # _posts
@@ -96,9 +99,9 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      # comments: true
       share: true
-      related: true
+      # related: true
   # _pages
   - scope:
       path: "_pages"
@@ -113,3 +116,6 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+head_scripts:
+  - /assets/js/smooth-scroll.js
