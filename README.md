@@ -1,3 +1,3 @@
-My personal website
+My personal website.
 
-Made with Minimal Mistakes
+Made with Minimal Mistakes.
